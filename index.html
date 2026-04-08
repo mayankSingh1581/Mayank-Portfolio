@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Your Name — Portfolio</title>
+  <meta name="description" content="Personal portfolio of a BCA student and aspiring software developer." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Cormorant+Garamond:wght@500;600;700&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav class="nav" aria-label="Main navigation">
+    <div class="container nav__inner">
+      <a href="#home" class="brand" aria-label="Home">
+        <span class="brand__mark" aria-hidden="true">
+          <svg width="22" height="22" viewBox="0 0 22 22" fill="none">
+            <path d="M4 17L11 4L18 17M7 12.5H15" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </span>
+        <span class="brand__name">MAYANK</span>
+      </a>
+
+      <div class="nav__links">
+        <a href="#about">About</a>
+        <a href="#work">Work</a>
+        <a href="#contact">Contact</a>
+      </div>
+
+      <div class="nav__actions">
+        <button class="theme-toggle" data-theme-toggle aria-label="Toggle theme">
+          <i data-lucide="sun"></i>
+        </button>
+        <a href="#contact" class="btn btn--ghost">Let's Talk</a>
+        <button class="menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false">
+          <i data-lucide="menu"></i>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <div class="mobile-menu grid-line-box" id="mobileMenu" aria-label="Mobile navigation">
+    <a href="#about">About</a>
+    <a href="#work">Work</a>
+    <a href="#contact">Contact</a>
+  </div>
+
+  <header class="hero" id="home">
+    <div class="container hero__wrap">
+      <div class="hero__copy reveal">
+        <span class="eyebrow">
+          <i data-lucide="sparkles" width="14" height="14"></i>
+          Portfolio 2026
+        </span>
+
+        <h1 class="hero__title">
+          I design and build <span class="accent">clean</span>, thoughtful digital experiences.
+        </h1>
+
+        <p class="hero__desc">
+          I'm a BCA student and aspiring software developer from India, focused on web development, data structures, and practical projects that look refined and work smoothly.
+        </p>
+
+        <div class="hero__actions">
+          <a href="#work" class="btn btn--primary">
+            <i data-lucide="arrow-down-right" width="16" height="16"></i>
+            View Work
+          </a>
+          <a href="#contact" class="btn btn--ghost">
+            <i data-lucide="mail" width="16" height="16"></i>
+            Contact Me
+          </a>
+        </div>
+
+        <div class="hero__meta">
+          <span>Based in India</span>
+          <span>BCA Student</span>
+          <span>Open for internships</span>
+        </div>
+      </div>
+
+      <div class="hero__panel grid-line-box reveal">
+        <div class="portrait">
+          <img src="your-photo.jpg" alt="Your Name" class="portrait__image" />
+          <div class="portrait__badge">Software Developer</div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section class="section" id="about">
+    <div class="container about__grid">
+      <div class="about__card grid-line-box reveal">
+        <div class="section-label">About</div>
+        <h2 class="title">A student who cares about both code and presentation.</h2>
+        <p>
+          I enjoy building projects that are simple, clear, and useful. My focus is not only writing code, but also shaping interfaces that feel polished and easy to understand.
+        </p>
+
+        <div class="stats">
+          <div class="stat">
+            <strong>3rd</strong>
+            <span>Year BCA</span>
+          </div>
+          <div class="stat">
+            <strong>10+</strong>
+            <span>Projects</span>
+          </div>
+          <div class="stat">
+            <strong>3</strong>
+            <span>Core Languages</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="about__card grid-line-box reveal">
+        <div class="section-label">Skills</div>
+
+        <div class="skills-panel">
+          <div class="skill-box">
+            <h3>Frontend</h3>
+            <div class="chip-list">
+              <span class="chip">HTML</span>
+              <span class="chip">CSS</span>
+              <span class="chip">JavaScript</span>
+              <span class="chip">Responsive Design</span>
+            </div>
+          </div>
+
+          <div class="skill-box">
+            <h3>Programming</h3>
+            <div class="chip-list">
+              <span class="chip">C++</span>
+              <span class="chip">Java</span>
+              <span class="chip">OOP</span>
+              <span class="chip">DSA</span>
+            </div>
+          </div>
+
+          <div class="skill-box">
+            <h3>Tools</h3>
+            <div class="chip-list">
+              <span class="chip">GitHub</span>
+              <span class="chip">VS Code</span>
+              <span class="chip">SQL</span>
+              <span class="chip">Linux</span>
+            </div>
+          </div>
+
+          <div class="skill-box">
+            <h3>Learning</h3>
+            <div class="chip-list">
+              <span class="chip">React</span>
+              <span class="chip">Node.js</span>
+              <span class="chip">Problem Solving</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="work">
+    <div class="container">
+      <div class="work-head reveal">
+        <div>
+          <div class="section-label">Selected Work</div>
+          <h2 class="title">Projects with a minimal, product-style approach.</h2>
+        </div>
+
+        <a class="btn btn--ghost" href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer">
+          <i data-lucide="github" width="16" height="16"></i>
+          GitHub
+        </a>
+      </div>
+
+      <div class="project-list">
+        <article class="project grid-line-box reveal">
+          <div class="project__visual">
+            <i data-lucide="layout-dashboard" width="40" height="40"></i>
+          </div>
+          <div class="project__meta">
+            <small>01 / Web Project</small>
+            <h3>Personal Dashboard</h3>
+            <p>
+              A clean dashboard interface for daily productivity with tasks, quick notes, and useful widgets arranged in a structured layout.
+            </p>
+            <div class="project__tags">
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>JavaScript</span>
+            </div>
+          </div>
+          <div class="project__links">
+            <a href="#">Live Preview</a>
+            <a href="#">Source Code</a>
+          </div>
+        </article>
+
+        <article class="project grid-line-box reveal">
+          <div class="project__visual">
+            <i data-lucide="binary" width="40" height="40"></i>
+          </div>
+          <div class="project__meta">
+            <small>02 / DSA Project</small>
+            <h3>Sorting Visualizer</h3>
+            <p>
+              An educational visual tool that shows how common sorting algorithms work step by step, designed to make DSA easier to grasp.
+            </p>
+            <div class="project__tags">
+              <span>C++</span>
+              <span>Algorithms</span>
+              <span>Visualization</span>
+            </div>
+          </div>
+          <div class="project__links">
+            <a href="#">Case Study</a>
+            <a href="#">GitHub</a>
+          </div>
+        </article>
+
+        <article class="project grid-line-box reveal">
+          <div class="project__visual">
+            <i data-lucide="database" width="40" height="40"></i>
+          </div>
+          <div class="project__meta">
+            <small>03 / Java Project</small>
+            <h3>Student Record System</h3>
+            <p>
+              A simple CRUD application for managing student information with organized forms, search functionality, and database connectivity.
+            </p>
+            <div class="project__tags">
+              <span>Java</span>
+              <span>SQL</span>
+              <span>CRUD</span>
+            </div>
+          </div>
+          <div class="project__links">
+            <a href="#">Overview</a>
+            <a href="#">Repository</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="contact">
+    <div class="container">
+      <div class="contact-card grid-line-box reveal">
+        <div class="section-label">Contact</div>
+        <h2 class="contact-title">Let’s create something strong and well-crafted.</h2>
+        <p style="margin-inline:auto">
+          I’m available for internships, freelance work, and student collaborations. Replace the details below with your real accounts and you are ready to publish.
+        </p>
+
+        <div class="contact-actions">
+          <a href="mailto:mayanksingh97198@gmail.com" class="contact-link">
+            <i data-lucide="mail" width="16" height="16"></i>
+            mayanksingh97198@gmail.com
+          </a>
+
+          <a href="https://github.com/mayankSingh1581/" target="_blank" rel="noopener noreferrer" class="contact-link">
+            <i data-lucide="github" width="16" height="16"></i>
+            GitHub
+          </a>
+
+          <a href="https://www.linkedin.com/in/mayanksingh73/" target="_blank" rel="noopener noreferrer" class="contact-link">
+            <i data-lucide="linkedin" width="16" height="16"></i>
+            LinkedIn
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <span>© 2026 Your Mayank</span>
+      <span>Built with HTML, CSS & JavaScript</span>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
